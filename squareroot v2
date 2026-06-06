@@ -1,0 +1,8 @@
+const number=parseFloat(prompt("Enter the number: "));
+if(isNaN(number)||number<0){
+    console.log("Enter a positive number: ");
+}
+else{
+    const result= Math.sqrt(number);
+    console.log(`The square root of ${number} is ${result}`);
+}
