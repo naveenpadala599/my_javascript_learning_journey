@@ -1,0 +1,9 @@
+const baseValue=parseFloat(prompt("Enter the base of a triangle: "));
+const heightValue=parseFloat(prompt("Enter the height of a triangle: "));
+if(isNaN(baseValue)||isNaN(heightValue)||baseValue<=0||heightValue<=0){
+    console.log("Please enter a valid positive number: ")
+}
+else{
+    const areaValue=baseValue*heightValue/2
+    console.log(`The area of triangle with ${baseValue} and ${heightValue} is ${areaValue}`)
+}
