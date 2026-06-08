@@ -1,0 +1,12 @@
+let a = parseFloat(prompt("Enter a number: "));
+let b = parseFloat(prompt("Enter another number: "));
+if(isNaN(a)||isNaN(b)){
+    console.log("Please enter a valid number");
+}
+else{
+    let t=a;
+    a=b;
+    b=t;
+    console.log(`a: ${a}`);
+    console.log(`b: ${b}`);
+}
