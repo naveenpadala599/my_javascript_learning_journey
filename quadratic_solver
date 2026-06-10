@@ -1,0 +1,29 @@
+let root1, root2
+let a = parseFloat(prompt("Enter the first number: "))
+let b = parseFloat(prompt("Enter the second number: "))
+let c = parseFloat(prompt("Enter the third number: "))
+if(isNaN(a)||isNaN(b)||isNaN(c)){
+    console.log("Please enter valid numbers for a, b and c")
+}
+else if(a===0){
+    console.log("a cannot be zero in a quadratic equation.")
+}
+else{
+    let discriminent = b*b - (4*a*c)
+    if (discriminent>0){
+        root1 = (-b + Math.sqrt(discriminent))/(2*a)
+        root2 = (-b - Math.sqrt(discriminent))/(2*a)
+        console.log(`The roots of the quadratic equation ${a}x**2+${b}x+${c} is ${root1} and ${root2}`)
+    }
+    else if(discriminent == 0){
+        root1 = -b/(2*a)
+        root2 = -b/(2*a)
+        console.log(`The roots of the quadratic equation ${a}x**2+${b}x+${c} is ${root1} and ${root2}`)
+    }
+    else{
+        console.log(`${a}x**2+${b}x+${c} does not have real roots `)
+        const realPart = parseFloat(((-b)/(2*a)).toFixed(2))
+        const imagPart = parseFloat(((Math.sqrt((b*b-4*a*c)*(-1)))/(2*a)).toFixed(2))
+        console.log(`The roots are ${realPart}+${imagPart}i, ${realPart}-${imagPart}`)
+    }
+}
