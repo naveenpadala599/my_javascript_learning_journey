@@ -1,0 +1,10 @@
+const kilometers = parseFloat(prompt("Enter the number of kilometers: "))
+if (isNaN(kilometers)){
+    console.log("Enter a valid number of kilometers")
+}
+else if (kilometers<0){
+    console.log("Enter a positive number")
+}
+else{
+    console.log(`Number of miles miles is equal to ${(kilometers*0.621371).toFixed(4)} miles.`)
+}
