@@ -1,0 +1,16 @@
+const input = prompt("Enter the number of kilometers: ")
+if (input === null || input.trim() === ""){
+    console.log("You cancelled or entered nothing.")
+}
+else{
+    const kilometers = parseFloat(input)
+    if (isNaN(kilometers)){
+        console.log("Enter a valid number of kilometers")
+    }
+    else if (kilometers<0){
+        console.log("Enter a positive number")
+    }
+    else{
+        console.log(`${kilometers} km is equal to ${(kilometers*0.621371).toFixed(4)} miles.`)
+    }
+}
