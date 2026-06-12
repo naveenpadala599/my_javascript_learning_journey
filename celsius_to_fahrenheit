@@ -1,0 +1,13 @@
+const input = prompt("Enter the temperature in celcius: ")
+if (input === null || input.trim() === ""){
+    console.log("You cancelled or entered nothing. Please enter a valid temperature.")
+}
+else{
+    const celsius = parseFloat(input)
+    if (isNaN(celsius)){
+        console.log("Enter a valid temperature.")
+    }
+    else{
+        console.log(`${celsius} celsius = ${((celsius*1.8)+32).toFixed(3)} fahrenheit.`)
+    }
+}
