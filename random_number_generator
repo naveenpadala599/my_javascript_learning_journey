@@ -1,0 +1,4 @@
+const min = parseInt(prompt("Enter the minimum number: "))
+const max = parseInt(prompt("Enter the maximum number: "))
+const a = Math.floor((Math.random())*(max - min+1)+min)
+console.log(`${a}`)
