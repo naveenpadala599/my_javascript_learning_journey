@@ -1,0 +1,21 @@
+let input = prompt("Enter a number: ")
+if(input === null || input.trim()===""){
+    console.log("You cancelled or entered nothing.")
+}
+else{
+    let number=parseInt(input)
+    if(isNaN(number)){
+        console.log("Enter a valid number.")
+    }
+    else{
+        if (number>0){
+            console.log("The number is positive.")
+        }
+        else if (number==0){
+            console.log("The number is neither positive nor negative.")
+        }
+        else{
+            console.log("The number is negative.")
+        }
+    }
+}
