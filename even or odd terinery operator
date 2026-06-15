@@ -1,0 +1,14 @@
+const input = prompt("Enter the number: ")
+if(input==null||input.trim()===""){
+    console.log("You cancelled or entered nothing.")
+}
+else{
+    const number=parseInt(input)
+    if(isNaN(number)){
+        console.log("Enter a valid number.")
+    }
+    else{
+        const result = (number%2===0) ? "even" : "odd"
+        console.log(`The number is ${result}`)
+    }
+}
