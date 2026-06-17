@@ -1,0 +1,23 @@
+while(true){
+    const input1 = prompt("Enter the first number: ");
+    const input2 = prompt("Enter the second number: ");
+    const input3 = prompt("Enter the third number: ");
+    if(input1===null||input2===null||input3===null||input1.trim()===""||input2.trim()===""||input3.trim()===""){
+        console.log("You entered nothing or cancelled. please enter the numbers again.")
+    }
+    else{
+        const num1=parseInt(input1)
+        const num2=parseInt(input2)
+        const num3=parseInt(input3)
+        if(isNaN(num1)||isNaN(num2)||isNaN(num3)){
+            console.log("One or more of the inputs are not number. Please enter a number.")
+            continue
+        }
+        else{
+            const largest = Math.max(num1, num2, num3)
+            console.log(`${largest} is the largest of the three numbers.`)
+            break
+        }
+
+    }
+}
