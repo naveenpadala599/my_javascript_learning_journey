@@ -1,0 +1,37 @@
+while(true){
+    let number=Number(prompt("Enter a number: "))
+    if (isNaN(number)||number<0||!Number.isInteger(number)){
+        console.log("Please enter a valid positive integer.")
+        continue;
+    }
+    else{
+        if (number===0){
+            console.log("zero has infinite divisors so not a prime number.")
+            continue
+        }
+        else if(number===1){
+            console.log(" one is neither a prime nor composite.")
+            continue
+        }
+        else{
+            let isPrime=true
+            for(let i=2; i<=number**(1/2); i++){
+                if(number%i===0){
+                    isPrime=false
+                    break
+                }
+                else{
+                    continue
+                }
+            }
+            if (isPrime==true){
+                console.log(`${number} is a prime number.`)
+                continue
+            }
+            else{
+                console.log(`${number} is not a prime number.`)
+                continue
+            }
+        }
+    }
+}
