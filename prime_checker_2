@@ -1,0 +1,23 @@
+let input = prompt("Enter the number: ");
+let number = parseInt(input);
+if(number ===1){
+    console.log("One is neither prime nor composite.");
+}
+else if(number===0){
+    console.log("Zero has infinite divisors.");
+}
+else if(number===2||number===3){
+    console.log(`${number} is a prime number.`);
+}
+else{
+    for(let i=2; i<= Math.floor(number**(1/2)); i++){
+        if(number%i===0){
+            console.log(`${number} is not a prime number.`);
+            break;
+        }
+        else if(i === Math.floor(number**(1/2))){
+            console.log(`${number} is a prime number.`)
+            break;
+        }
+    }
+}
