@@ -1,0 +1,21 @@
+const lowerNumber=parseInt(prompt("Enter the lower number: "));
+const higherNumber=parseInt(prompt("Enter the higher number: "));
+for(let i=lowerNumber; i<=higherNumber; i++){
+    if(i===0){console.log("0 has infinite divisors so not prime")}
+    else if(i===1){console.log("1 is neither prime nor composite")}
+    else{
+        let isPrime=true;
+        for(let j=2; j*j<=i; j++){
+            if(i%j===0){
+                isPrime=false;
+                break;
+            }
+            else if(!i%j===0){
+                continue;
+            }
+        }
+        if(isPrime===true){
+            console.log(i)
+        }    
+    }
+}
