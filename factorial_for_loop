@@ -1,0 +1,24 @@
+while(true){
+    let number = prompt("Enter the number: ");
+    number=parseInt(number);
+        if (number<0){
+            console.log("Enter a positive number.");
+            continue;
+        }
+        else if(number===0){
+            console.log(1);
+            continue;
+        }
+        else if(isNaN(number)){
+            console.log("Enter a number.");
+            continue;
+        }
+        else{
+            let factorial=1;
+            for(let i=number; i>0; i--){
+                factorial=factorial*(i);
+            }
+            console.log(factorial);
+        }
+        continue;
+    }
