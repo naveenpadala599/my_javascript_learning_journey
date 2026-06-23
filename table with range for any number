@@ -1,0 +1,15 @@
+while(true){
+    const number=parseFloat(prompt("Enter an integer: "));
+    const range=parseFloat(prompt("Enter the range: "));
+    if(isNaN(number)||isNaN(range)){
+        console.log("Enter a valid number and range: ");
+        continue;
+    }
+    else if(!(range%1===0)||range<0){
+        console.log("Enter an positive integer for range: ");
+        continue;
+    }
+    for (let i=1; i<=range; i++){
+        console.log(`${number} x ${i} = ${number*i}`);
+    }
+}
