@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      JavaScript display manipulation.
+    </title>
+  </head>
+  <body>
+    <h2>What can JavaScript do?</h2>
+      <p id="demo"> JavaScript can change the visibility of HTML element.</p>
+      <button type="button" onclick="document.getElementById('demo').style.display='none'">Click Me!</button>
+
+  </body>
+
+</html>
