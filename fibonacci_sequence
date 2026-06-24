@@ -1,0 +1,24 @@
+while(true){
+    let number=parseFloat(prompt("Enter the number of terms: "));
+    let a=0;
+    let b=1;
+    let temp=0;
+    if(isNaN(number)||number<0){
+        console.log("Enter a valid positive number:");
+        continue;
+    }
+    else if(!(number%1===0)){
+        console.log("Enter a integer instead of a decimal number: ");
+        continue;
+    }
+    else{
+        console.log(`The fibonacci sequence with ${number} terms is: `)
+        for(let i=1; i<=number; i++){
+           console.log(a);
+           temp=a;
+           a=b;
+           b=temp+a;
+        }
+    break;    
+    }
+}
