@@ -1,0 +1,10 @@
+let number=parseFloat(prompt("Enter a number: "));
+lennumber=number;
+let sum=0;
+let len=1;
+while(lennumber>=10){
+    len=len+1;
+    lennumber=Math.floor(lennumber/10);
+}
+
+console.log(len)
