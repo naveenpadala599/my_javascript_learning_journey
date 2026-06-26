@@ -1,0 +1,21 @@
+let input=prompt("Enter the number: ");
+let number=parseFloat(input)
+if(isNaN(number)||number<0||!(number%1===0)){
+    console.log("Enter valid positive integer.");
+}
+else{
+    let len=input.length;
+    let sum=0;
+    let digit=0;
+    while(number>0){
+        digit=number%10;
+        number=Math.floor(number/10);
+        sum=sum+(digit**len);
+    }
+    if(sum===parseInt(input)){
+        console.log(`${input} is an armstrong number.`);
+    }
+    else{
+        console.log(`${input} is not an armstrong number`)
+    }
+}
