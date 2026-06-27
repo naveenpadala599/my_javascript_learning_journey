@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> PARAGRAPH CHANGE</title> 
+    <script>
+      function myFunction(){
+        document.getElementById("demo").innerHTML="PARAGRAPH CHANGED";
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Demo JavaScript in head</h2>
+    <p id="demo">A paragrahph</p>
+    <button type="button" onclick="myFunction()">Change</button>
+  </body>
+</html>
