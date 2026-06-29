@@ -1,0 +1,35 @@
+const operator = prompt("Enter operator (+, -, *, /): ");
+const number1 = parseFloat(prompt("Enter first number: "));
+const number2 = parseFloat(prompt("Enter second number: "));
+
+if (isNaN(number1) || isNaN(number2)) {
+    console.log("Please enter valid numbers.");
+} 
+else {
+    let result;
+
+    if (operator === "+") {
+        result = number1 + number2;
+    } 
+    else if (operator === "-") {
+        result = number1 - number2;
+    } 
+    else if (operator === "*") {
+        result = number1 * number2;
+    } 
+    else if (operator === "/") {
+        if (number2 === 0) {
+            console.log("Error: Cannot divide by zero.");
+        } else {
+            result = number1 / number2;
+        }
+    } 
+    else {
+        console.log("Error: Invalid operator. Please use +, -, *, or /.");
+    }
+
+    // Only print result if it was calculated successfully
+    if (result !== undefined) {
+        console.log(`${number1} ${operator} ${number2} = ${result}`);
+    }
+}
