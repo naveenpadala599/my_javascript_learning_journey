@@ -1,0 +1,37 @@
+let operator=prompt("Enter an operator +,-,*,/:" );
+if(operator!=="+"&&operator!=="-"&&operator!=="*"&&operator!=="/"){
+    console.log("Enter valid operator +,-,*,/")
+}
+else{
+    let number1=parseFloat(prompt("Enter the first number: "));
+    let number2=parseFloat(prompt("Enter the second number: "));
+    if(isNaN(number1)||isNaN(number2)){
+        console.log("Enter vilid numbers")
+    }
+    else{
+        let result;
+        switch (operator){
+          case "+": 
+             result=number1+number2;
+             break;
+          case "-":
+             result=number1-number2;
+             break;
+          case "*":
+             result=number1*number2;
+             break;
+           case "/":
+             if(number2===0){
+               console.log("Cannot divide by zero.");
+               }
+             else{
+               result=number1/number2;
+             }
+             break;
+        }
+        if (result!==undefined){
+          console.log(`${number1} ${operator} ${number2} = ${result}`);
+        }
+    }
+}
+  
