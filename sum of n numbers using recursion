@@ -1,0 +1,11 @@
+let number = parseFloat(prompt("Enter the number: "));
+let sum = 0;
+function sumofn(n){
+    if(n<=0){
+        return 0;
+    }
+    sum = sum+n;
+    sumofn(n-1);
+}
+sumofn(number)
+console.log(`${sum}`);
