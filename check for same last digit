@@ -1,0 +1,17 @@
+let number1=parseFloat(prompt("Enter the first number: "));
+let number2=parseFloat(prompt("Enter the second number: "));
+let number3=parseFloat(prompt("Enter the third number: "));
+if(isNaN(number1)||isNaN(number2)||isNaN(number3)||number1%1!==0||number2%1!==0||number3%1!==0){
+    console.log("Enter integers.")
+}
+else{
+    const result1=number1%10;
+    const result2=number2%10;
+    const result3=number3%10;
+    if(result1===result2&&result1===result3){
+        console.log(`${number1},${number2},${number3} have the same last digit.`)
+    }
+    else{
+        console.log(`${number1},${number2},${number3} don't have the same last digit.`)
+    }
+}
