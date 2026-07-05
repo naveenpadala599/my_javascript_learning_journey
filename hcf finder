@@ -1,0 +1,19 @@
+let hcf;
+let firstNumber=parseFloat(prompt("Enter the first number: "));
+let secondNumber=parseFloat(prompt("Enter the second number: "));
+if(secondNumber<firstNumber){
+    let temp=firstNumber;
+    firstNumber=secondNumber;
+    secondNumber=temp;
+}
+for(let i=1; i<=firstNumber; i++){
+    if(firstNumber%i===0){
+        if(secondNumber%i===0){
+            hcf=i;
+        }
+        else{
+            continue;
+        }
+    }
+}
+console.log(`hcf of ${firstNumber} and ${secondNumber} is ${hcf}`)
