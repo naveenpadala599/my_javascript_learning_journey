@@ -1,0 +1,6 @@
+let value=42;
+console.log(value, typeof value);//number
+value="forty-two";
+console.log(value,typeof value);//string
+value={ok: true};
+console.log(value, typeof value);//object
