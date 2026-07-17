@@ -1,0 +1,9 @@
+let decimal=prompt("Enter the number: ");
+let rem;
+let bin=""
+while(decimal!=0){
+    rem=decimal%2;
+    bin=String(rem)+bin;
+    decimal=Math.floor(decimal/2);
+}
+console.log(bin)
