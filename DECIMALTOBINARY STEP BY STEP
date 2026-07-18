@@ -1,0 +1,23 @@
+number=Number(prompt("Enter a number: "));
+if(isNaN(number)||number%1!==0||number<0){
+    console.log("Enter a positive integer.")
+}
+else if(number===0){
+    console.log("binary of 0 is 0")
+}
+else{
+let i=1
+let rem;
+let bin=0;
+let step = 1;
+let quotient;
+while(number!==0){
+    quotient=Math.floor(number/2);
+    rem=number%2;
+    console.log(`step: ${step++} : ${number}/2= quotient = ${quotient} and reminder=${rem}`);
+    number=quotient;
+    bin=bin+rem*i;
+    i=i*10
+}
+console.log(bin)
+}
