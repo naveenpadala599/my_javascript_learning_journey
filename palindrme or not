@@ -1,0 +1,11 @@
+let str = prompt("Enter the string: ");
+let strrev=""
+for(let i=0; i<str.length; i++){
+    strrev=strrev+str[str.length-1-i];
+}
+if(str===strrev){
+    console.log("Palindrome")
+}
+else{
+    console.log("Not Palindrome.")
+}
