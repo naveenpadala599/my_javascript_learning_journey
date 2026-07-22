@@ -1,0 +1,10 @@
+const string = prompt("Enter a string: ");
+let array = string.split("");
+let reversearray = array.reverse();
+let revstring = reversearray.join("");
+if(string===revstring){
+    console.log("Palindrome");
+}
+else{
+    console.log("Not Palindrome.");
+}
