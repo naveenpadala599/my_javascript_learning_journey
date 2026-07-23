@@ -1,0 +1,5 @@
+string = prompt("Enter the string.");
+list=string.split(" ").sort();
+for(let i=0; i<=list.length-1; i++){
+    console.log(list[i])
+}
