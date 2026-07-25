@@ -1,0 +1,16 @@
+const person = {
+   name: "John",
+   age: 20,
+   hobbies: ["reading", "games", "coding"],
+   greet: function(){
+      console.log("Hellow everyone.");
+   },
+   score: {
+      maths: 90,
+      science: 80
+   }
+};
+console.log(typeof person);
+console.log(person.hobbies[0]);
+person.greet();
+console.log(person.score.maths);
