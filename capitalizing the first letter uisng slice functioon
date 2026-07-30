@@ -1,0 +1,4 @@
+const string = prompt("Enter the string: ");
+const upperLetter=string[0].toUpperCase();
+const capitalString=upperLetter+string.slice(1);
+console.log(capitalString);
