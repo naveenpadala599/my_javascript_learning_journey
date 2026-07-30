@@ -1,0 +1,8 @@
+const string = prompt("Enter the string: ");
+const upperLetter=string[0].toUpperCase();
+let lowerLetters = "";
+for(let i=1;i<string.length; i++){
+   lowerLetters=lowerLetters+string[i];
+}
+const capitalString=upperLetter+lowerLetters;
+console.log(capitalString);
