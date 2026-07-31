@@ -1,0 +1,10 @@
+let str = prompt("Enter the string: ");
+let vowels = ["a","e","i","o","u"];
+let letter;
+let count=0
+for(letter of str.toLowerCase()){
+    if(vowels.includes(letter)){
+        count++;
+    }
+}
+console.log(count);
