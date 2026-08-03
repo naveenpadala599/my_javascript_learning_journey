@@ -1,0 +1,28 @@
+const str = "javascript";
+console.log(str);
+console.log(str[0], str[1]);
+str[0]="p";
+console.log(str);//strings are immutable
+console.log(str.length);
+console.log(str[str.length-1]);//last character
+console.log(str.toUpperCase());
+console.log(str);//toUpperCase() does not change str . it created a new string. unless it is stored. it is discared
+const strUpper=str.toUpperCase();//now we can access the string uppercase variation via strUpper variable
+console.log(strUpper);
+console.log(strUpper.toLowerCase());
+const strSpaces="  javascript  "
+console.log(strSpaces.trim())//removes spaces from start and end
+const strMiddleSpace = "java script"
+console.log(strMiddleSpace.trim());//trim() only removes spaces from the start and end and ignore middle spaces
+console.log(str.includes("script"));// true or false
+console.log(str.includes("SCRIPT")); //includes is case sensitive
+console.log(str.startsWith("ja")); //true or false
+console.log(str.endsWith("pt"));
+console.log(str.indexOf("script"));//returns the starting index of the string
+console.log(str.indexOf("python"));//returns -1 if the string dosent contain the given string.
+console.log("one two one".lastIndexOf("one"));// returns the the first index of the last time the pattern occured.
+console.log(str.slice(4));//returns the string starting from the given index to the end
+console.log(str.slice(0,4));//.slice(start, end)
+console.log(str.slice(-6)); //counts form the end
+console.log("I love Java".replace("Java", "JavaScript")); //string.replace(old, new)
+console.log("cat cat cat".replace("cat", "dog"));//replaces only the first occurence
