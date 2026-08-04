@@ -1,0 +1,23 @@
+console.log("cat cat cat".replaceAll("cat", "dog"));//replaces all instances of the string pattern
+console.log("apple, mango, bananna".split(", "));//returns an array with string from the string divided based on the input seperator
+console.log("java".split(""));//stpits the string into individual characters
+console.log(["apple", "mango",  "bananna"].join(", "))
+console.log("javascript".substring(4));//differnces between slice and substring should be seen in the future
+console.log("javascript".substring(0,4));//from start up to but not including end
+console.log("javascript".substring(-6));//unlike slice, substring does not support negetive indexes, it defaults to index as zero
+console.log("javascript".at(2));// we will see the advantage of at compared str[] later
+console.log("javascript".at(-1));//at supports negetive indecies unlike str[]
+console.log("javascript".charAt(2));//today we prefer .at() or str[] but charAt()is still valid
+ console.log("javascript ".repeat(5));//just repeats the string however many times as the input is
+ console.log("javascript".padStart(46,"super "));//padd with the given string at the start
+ console.log("javascript".padEnd(46, " super"));
+ console.log(`javascript 
+ is 
+ awesome.`);//backticks for multiline strings
+ const a=1;
+ const b=2;
+ console.log(`${a}+${b}=${a+b}`)//template literals
+ console.log("I have 2 apples and 3 oranges".match(/\d+/));//first occurence of contiues numbers
+ console.log("I have 2 apples and 3 oranges".match(/\d+/)[0]);//gives only the match
+ console.log("I have 2 apples and 3 oranges".match(/\d+/)[index]);// gives only the index
+ 
