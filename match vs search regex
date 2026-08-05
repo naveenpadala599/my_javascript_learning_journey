@@ -1,0 +1,6 @@
+console.log("I have two apples and three oranges".match(/\d+/));
+console.log("I have 2 apples and 3 oragnes".match(/\d+/));
+console.log("I have 2 apples and 3 oranges".match(/\d+/g));
+console.log("I have two apples and three oranges".search(/\d+/));
+console.log("I have 2 apples and 3 oragnes".search(/\d+/));
+console.log("I have 2 apples and 3 oranges".search(/\d+/g));// g only works for match()
