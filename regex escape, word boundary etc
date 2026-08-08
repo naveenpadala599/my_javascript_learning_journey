@@ -1,0 +1,6 @@
+console.log(/cat|dog/.test("i have a dog"));
+console.log(/\./.test("hello. world"));
+console.log(/\?/.test("hello world?"));
+console.log(/\*/.test("5*3=15"));
+console.log(/\\/.test("c:\\naveen"));
+console.log(/\bcat\b/.test("cato"));
