@@ -1,0 +1,7 @@
+console.log(/\D/.test("1234b"));
+console.log(/\W/.test("1231@"));
+console.log("john: 25".match(/(\w+)/));
+console.log("john:25".match(/(\w+):(\d+)/));
+console.log("john smith".replace(/(\w+)\s(\w+)/, "$2 $1"));
+console.log("john:12345".match(/\d+/)?.[0]);
+console.log("jhon@gmail.com".includes("@"));
