@@ -1,0 +1,14 @@
+function greet(){
+    console.log("hello world");
+}
+x=greet;
+greet();
+x();
+function run(fn){
+    fn();
+}
+run(greet);
+function run1(fn){
+    console.log("hello");
+}
+run1(greet());
