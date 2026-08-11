@@ -1,0 +1,11 @@
+function run(fn){
+    fn();
+}
+run(function() {
+    console.log("hi")
+});
+run(()=>{
+    console.log("hello, world!")
+});
+
+
