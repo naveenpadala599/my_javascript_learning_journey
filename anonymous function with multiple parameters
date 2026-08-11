@@ -1,0 +1,9 @@
+function run(fn){
+    fn("javascript", 30);
+}
+run(function(name, age){
+    console.log(name, age);
+})
+run((name, age)=>{
+    console.log(name, age);
+})
