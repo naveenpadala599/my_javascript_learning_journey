@@ -1,0 +1,11 @@
+function run(fn){
+    fn("javascript");
+}
+run(function(name) {
+    console.log("hi", name)
+});
+
+
+run((name)=>{
+    console.log("hello", name)
+});
