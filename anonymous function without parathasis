@@ -1,0 +1,15 @@
+function run(fn){
+    fn("javascript");
+}
+run(function(name) {
+    console.log("hi", name)
+});
+
+
+run(name=>{//parathases is not a must if only one parameter
+    console.log("hello", name)
+});
+
+
+
+
