@@ -1,0 +1,14 @@
+const words = ["I", "love", "javascript"];
+const sentence=words.reduce((result, word)=>{
+    return result +" "+word;
+});
+console.log(sentence);
+const numbers = [2, 5, 10, 20];
+const index = numbers.findIndex(num=>num>10);
+console.log(index);
+const numbs = [1, 2, 3, 4, 5, 6, 7, 8 ];
+const result = numbs.filter(num=>num%2==0).map(num=>num*10);
+console.log(result);
+numbs.forEach((num, index, array)=>{
+    console.log(num, index, array);
+});
