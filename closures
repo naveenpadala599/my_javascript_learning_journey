@@ -1,0 +1,16 @@
+function greeter(){
+    return function(){
+        console.log("Hello!");
+    }
+}
+const greet = greeter();
+greet();
+function namegreeter(name){
+    return function(){
+        console.log("Hello", name);
+    }
+}
+const greet1 = namegreeter("John");
+const greet2 = namegreeter("Alice");
+greet1();
+greet2();
