@@ -1,0 +1,33 @@
+function makecounter(){
+
+    count=0;
+
+    return function(){
+
+        count++;
+
+        console.log(count);
+
+    };
+
+}
+
+const counter=makecounter();
+
+counter();
+
+counter();
+
+counter();
+
+counterA=makecounter();
+
+counterB=makecounter();
+
+counterA();
+
+counterA();
+
+counterB();
+
+counterA();
