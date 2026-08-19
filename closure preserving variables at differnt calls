@@ -1,0 +1,11 @@
+function makecounter(start, step){
+    let count = start;
+    return function(){
+        console.log(count);
+        count = count + step;
+    }
+}
+const counter = makecounter(10, 5);
+counter();
+counter();
+counter();
