@@ -1,0 +1,17 @@
+function makeCounter(){
+    let count = 0;
+    return{
+       increment: function(){
+             count++; 
+          },
+          show: function(){
+             console.log(count);
+          }
+            
+       };
+}
+const counter= makeCounter();
+
+counter.increment();
+counter.increment();
+counter.show();
